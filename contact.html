@@ -4,10 +4,65 @@
   <link rel="stylesheet" href="css/style.css">
 <meta charset="utf-8" />
 <title>Best Destinations</title>
-<h1>Tui</h1>
-<h2>Discover your smile</h2>
 </head>
 <body>
+  <nav>
+  <label class="logo">Tui</label>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="bestdestinations.html">Best Destinations</a></li>
+    <li><a href="tickets.html">Tickets</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<form>
+  <fieldset>
+<h2>Please select the topic you would like to contact us about.</h2>
+<h2>  So that we can serve you better and faster. </h2>
+  <ul>
+    <li>
+  <label for="question">Make A Choice</label>
+  <select name="question">
+  <option value="order">I have a question about a flight</option>
+  <option value="information">I like to have more information about a destination.</option>
+  <option value="other">I have another question.</option>
+  </select>
+</li>
+<li>
+  <label for ="note">Note&ast;&colon;</label>
+  <input type="text" name="note" value="your message here.." />
+  <span>
+    The notes can be up to 5000 characters.
+  </span>
+  </li>
+  <li>
+    <label for ="file">Add an attachment?<span>(optional)</span></label>
+  </li>
+  <li>
+  <input type="text" name="file" />
+  <span>
+    Up to 10 MB in size.
+  </span>
+  </li>
+  <li><label for "filename">First and Last name&ast;&colon;</label>
+    <input type="text" name="filename" />
+  </li>
+  <li>
+    <label for "phone">Phone Number</label>
+    <input type="text" name="phonenumber" />
+  </li>
+  <li>
+    <label for "emails">Email Address&ast;</label>
+    <input type="text" name="emailaddress" />
+  </li>
+  <li>
+    <button type="submit">&gt; Send email</button>
+  </li>
+</ul>
+  </fieldset>
+  </form>
+</article>
 </body>
 <footer>
   &copy;2021 Conor O'Gara.
