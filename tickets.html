@@ -2,25 +2,36 @@
 <html lang="en">
 <head>
   <link rel="stylesheet" href="css/style.css">
-<meta charset="utf-8" />
-<title>Tickets</title>
+<meta charset="utf-8">
+<meta name="description" content="Holiday Ticket Information">
+<meta name="keywords" content="Flight Destinations, Country, Date Of Departure, Travel Time, Return Price">
+<meta name="author" content ="Conor O'Gara">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tui Tickets</title>
+<link rel="shortcut icon" type="image/png" href="./img/tui-favicon.png"/>
+<image src="./img/tui-logo.png" alt="Logo" width=50px height=50px>
+<h1>Tui</h1>
+<h2>Discover Your Smile</h2>
 </head>
 <body>
-  <nav>
-  <label class="logo">Tui</label>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="bestdestinations.html">Best Destinations</a></li>
-    <li><a href="tickets.html">Tickets</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-</nav>
-  <header>
-    <h1>TUI</h1>
-    <h2>Discover Your Smile</h2>
-  </header>
-
-  <table>
+  <nav id="navburger">
+    <label for "hamburger">&#9776;</label>
+    <input type ="checkbox" id ="hamburger" />
+    <menu id="hamburgeritems">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="bestdestinations.html">Best Destinations</a></li>
+        <li><a href="tickets.html">Tickets</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </menu>
+  </nav>
+  <h3>Tui's Ticket Information</h3>
+<article id="ticketinfo">
+  <p>Here at Tui, we're always doing our best to make sure that you get the best deal possible. We've selected some of the best destinations around the planet, brought to you for the lowest possible prices.
+    There's a place out there for everyone, and we believe that you will go on the holiday of your dreams with us. Please note that each ticket price is not inclusive of Tui's small fee of €15. </p>
+  </article>
+  <table class="tabletickets">
     <thead>
     <tr>
       <th>Flight Destinations</th>
@@ -173,12 +184,31 @@
         </tr>
         </tbody>
         </table>
+        <article class ="tablefooter">
         <p>Source of data &copy 2021 TUI.nl</p>
         <p>*All prices are excluding €15,00 booking fee.</p>
-        <aside>
+      </article>
+        <aside class="ticketaside1">
+          <h3>Bonaire</h3>
+          <a href="https://www.tui.nl/informatie/bonaire/">
+          <img src="./img/bonaire.jpeg" alt="Bonaire" class="imageresponsive">
+        </a>
+        </aside>
+        <aside class="ticketaside2">
+          <h3>Malaga</h3>
+          <a href="https://www.tui.nl/informatie/spanje/andalusie/costa-del-sol/malaga/">
+            <img src="./img/malaga.jpeg"alt="Malaga" class="imageresponsive">
+          </a>
+        </aside>
+        <aside class="ticketaside3">
+          <h3>Paphos</h3>
+          <a href="https://www.tui.nl/informatie/cyprus/west-cyprus/paphos/">
+            <img src="./img/paphos.jpeg" alt="Paphos" class="imageresponsive">
+          </a>
         </aside>
   </body>
   <footer>
     &copy;2021 Conor O'Gara.
     </footer>
+    <object class="cookies">Cookie statement</object>
   </html>

@@ -2,69 +2,97 @@
 <html lang="en">
 <head>
   <link rel="stylesheet" href="css/style.css">
-<meta charset="utf-8" />
-<title>Best Destinations</title>
+<meta charset="utf-8">
+<meta name="description" content="Contact Form Submission Page Where Users Can Submit A Question To Tui">
+<meta name="keywords" content="Contact, Question, Destination, Help">
+<meta name="author" content ="Conor O'Gara">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tui Contact Page</title>
+<link rel="shortcut icon" type="image/png" href="./img/tui-favicon.png"/>
+<image src="./img/tui-logo.png" alt="Logo" width=50px height=50px>
+<h1>Tui</h1>
+<h2>Discover Your Smile</h2>
 </head>
 <body>
-  <nav>
-  <label class="logo">Tui</label>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="bestdestinations.html">Best Destinations</a></li>
-    <li><a href="tickets.html">Tickets</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-</nav>
-
-<form>
+  <nav id="navburger">
+    <label for "hamburger">&#9776;</label>
+    <input type ="checkbox" id ="hamburger" />
+    <menu id="hamburgeritems">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="bestdestinations.html">Best Destinations</a></li>
+        <li><a href="tickets.html">Tickets</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </menu>
+  </nav>
+  <main class = "contactus">
+  <h2>Contact Us</h2>
+  <p>Here at Tui, we're always looking to help our customers as much as possible. If you would like to speak us directly, you can do so using the following information: </p>
+    <ol>
+      <li>By Mail: 123 Example Street, Amsterdam, The Netherlands.</li>
+      <li>By Phone: +0123456789 (Phone Operating Hours are 09.00 - 17.00 Monday to Friday)</li>
+      <li>By Email: help@tui.nl </li>
+    </ol>
+    <p>However, if you would like to submit a question to our customer service team, please feel free to do so using the form below.</p>
+  </main>
+<form class ="formyform">
+<p>If you would like to submit a question to us, please do so using the form below.</p>
+<p>Please select one of the topics provided, so that we can help you with your query.</p>
   <fieldset>
-<h2>Please select the topic you would like to contact us about.</h2>
-<h2>  So that we can serve you better and faster. </h2>
   <ul>
     <li>
-  <label for="question">Make A Choice</label>
+  <label for="question">The topic in relation to your question</label>
   <select name="question">
   <option value="order">I have a question about a flight</option>
   <option value="information">I like to have more information about a destination.</option>
   <option value="other">I have another question.</option>
   </select>
 </li>
+<li><label for "name">First and Last Name&ast;&colon;</label>
+  <input type="text" name="name" />
+</li>
 <li>
-  <label for ="note">Note&ast;&colon;</label>
-  <input type="text" name="note" value="your message here.." />
-  <span>
-    The notes can be up to 5000 characters.
-  </span>
-  </li>
+  <label for "email">Email Address&ast;</label>
+  <input type="text" name="email" />
+</li>
+<li>
+  <label for ="message">Your Message&ast;&colon;</label>
+  <input type="text" name="message" value="your message here.." />
+</li>
+  <p>
+    Please note that your message cannot exceed 5000 characters.
+  </p>
+
   <li>
-    <label for ="file">Add an attachment?<span>(optional)</span></label>
-  </li>
-  <li>
-  <input type="text" name="file" />
-  <span>
-    Up to 10 MB in size.
-  </span>
-  </li>
-  <li><label for "filename">First and Last name&ast;&colon;</label>
-    <input type="text" name="filename" />
-  </li>
-  <li>
-    <label for "phone">Phone Number</label>
-    <input type="text" name="phonenumber" />
-  </li>
-  <li>
-    <label for "emails">Email Address&ast;</label>
-    <input type="text" name="emailaddress" />
-  </li>
-  <li>
-    <button type="submit">&gt; Send email</button>
+    <button type="submit" onclick="return confirm('Are you sure?')">&gt; Send email</button>
   </li>
 </ul>
   </fieldset>
   </form>
 </article>
+<aside class="contacta1">
+  <h3>Bonaire</h3>
+  <a href="https://www.tui.nl/informatie/bonaire/">
+  <img src="./img/bonaire.jpeg" alt="Bonaire" class="imageresponsive">
+</a>
+</aside>
+<aside class="contacta2">
+  <h3>Malaga</h3>
+  <a href="https://www.tui.nl/informatie/spanje/andalusie/costa-del-sol/malaga/">
+    <img src="./img/malaga.jpeg"alt="Malaga" class="imageresponsive">
+  </a>
+</aside>
+<aside class="contacta3">
+  <h3>Paphos</h3>
+  <a href="https://www.tui.nl/informatie/cyprus/west-cyprus/paphos/">
+    <img src="./img/paphos.jpeg" alt="Paphos" class="imageresponsive">
+  </a>
+</aside>
 </body>
+
 <footer>
   &copy;2021 Conor O'Gara.
   </footer>
+  <object class="cookies">Cookie statement</object>
 </html>

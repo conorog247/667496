@@ -1,6 +1,7 @@
+/* Setting the style for the html values */
 *{
-  padding: 0;
-  margin: 0;
+  padding: 0.1rem;
+  margin: 1rem;
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
@@ -17,89 +18,257 @@ body {
   text-indent: inherit;
   letter-spacing: inherit;
   word-spacing: inherit;
+  padding: 1rem;
 }
-nav{
-  width: 100%;
-  height: : 50px;
-  background-color: #e5e5e5;
-  letter-spacing: inherit;
-  word-spacing: inherit;
-  position: sticky;
+
+aside {
+  width: 40%;
+  font-size: 90%;
+  display: block;
+  grid-template-columns: auto auto;
+  grid-gap: 1rem;
+  grid-auto-flow: minmax(300px, auto);
+  float: left;
+  justify-content: space-between;
+  flex-flow: column;
 }
-label.logo{
-  color: #FFC72B;
-  font-size: 35px;
-  line-height: 80px;
-  padding: 2px;
-  font-weight: bold;
-}
-nav ul{
-  display: flex;
-  float: right;
-  margin-right: 20px;
-}
-nav ul li{
-  display: inline-block;
-  line-height: 80px;
-  margin 0 5px;
-}
-nav ul li a{
-  color: #95B2B0;
-  font-size: 17px;
-  text-transform: uppercase;
-  padding: 7px 13px;
-  border-radius: 3px;
-}
-a.active,a:hover{
-  background: #1b9bff;
-  transition: .5s;
-  color: #FFC72B;
-}
+
 h1{
-  font-family: "Arial", "Helvetica", sans-serif;
+  font-family: "Notable", sans-serif;
   color: #FFC72B;
   text-indent: inherit;
-  letter-spacing: inherit;
-  word-spacing: inherit
-  text-transform: uppercase;
+  letter-spacing: 0.125em;
+  word-spacing: inherit;
 }
+
 h2{
-  font-family: "Arial", "Helvetica", sans-serif;
+  font-family: "Didot", serif;
   color: #69140E;
   text-indent: inherit;
-  letter-spacing: inherit;
+  letter-spacing: 0.05em;
   word-spacing: inherit;
   text-transform: uppercase;
 }
+
 h3{
-  font-family: "Notable", sans-serif;
-  color: #190933;
+  font-family:  "Didot", serif;
+  font-size: 3rem;
+  color: #f0ead6;
   text-indent: inherit;
-  letter-spacing: inherit;
+  letter-spacing: 0.05em;
+  text-align: center;
   word-spacing: inherit;
   text-transform: uppercase;
 }
+
 p{
   text-indent: inherit;
   color: #0D5C63;
-  letter-spacing: inherit;
+  letter-spacing: 0.05em;
   word-spacing: inherit;
-  word-spacing: inherit;
+  text-align: center;
+  text-decoration: none;
+  font-family: "Georgia", serif;
+  font-size: 1rem;
 }
-header{
 
-}
-article{
-
-}
-aside{
-
-}
 footer{
   position: fixed;
   bottom: 8px;
   left: 16px;
+  color: #708090;
 }
+
+label{
+  color: #0D5C63;
+  display: inline-block;
+  text-align: left;
+  width: 20rem;
+  vertical-align: left;
+}
+
+input{
+  font-size: inherit;
+}
+
+span{
+  display: inline-block;
+  text-align: left;
+  width: 150px;
+  vertical-align: top;
+}
+
+button{
+  margin-top: auto;
+  margin-bottom: auto;
+  background: #0D5C63;
+  color: #f0ead6;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 1rem;
+  font-size: 1.2rem;
+  text-align: center;
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
+table{
+          padding: 10px;
+          border: 3px solid #1c87c9;
+          border-radius: 5px;
+          background-color: #e5e5e5;
+          text-align: left;
+          width: 100%;
+}
+
+th{
+        padding: 10px;
+        border: 2px solid #1c87c9;
+        border-radius: 5px;
+        background-color: #e5e5e5;
+        text-align: center;
+        color: #1c87c9;
+      }
+th:hover{
+  background-color: #1c87c9;
+  color: #e5e5e5;
+}
+
+td{
+        text-align: center;
+        color: #190933;
+        font-family: Helvetica, sans-serif;
+      }
+
+td:hover{
+  background-color: #1c87c9;
+  color: #e5e5e5;
+}
+
+main{
+        /* max-width: 500px; */
+        margin: 0 auto;
+      }
+
+figcaption{
+        color: #708090;
+        margin-top: auto;
+        padding: 0.5rem;
+        border: none;
+        border-radius: 1rem;
+        font-size: 0.95rem;
+        text-align: center;
+        font-family: "Courier", monospace;
+      }
+nav{
+  width: 100%;
+	float: left;
+	margin: 0 0 1em 0;
+	padding: 0;
+  border-bottom: 1px solid #ccc;
+}
+ol{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 100%;
+  text-align: center;
+  display: block;
+}
+ol li{
+  float: left;
+}
+ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        width: 100%;
+      }
+ul li {
+        float: left;
+      }
+
+ul li a {
+        display: block;
+        color: #F5FFFA;
+        text-align: center;
+        padding: 8px 16px;
+        text-decoration: none;
+        flex-grow: 1;
+        flex-basis: 0;
+        text-align: center;
+        font-weight: bold;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: "Notable", sans-serif;
+      }
+
+li a:hover {
+        transition: .5s;
+        color: #FFC72B;
+      }
+
+#nav li:first-child a {
+      	border-left: 1px solid #ccc;
+      }
+
+video {
+           max-width: 100%;
+           height: auto;
+      }
+
+/* Setting style for custom containers*/
+.recommendations, .bestdestinations, .formyform{
+  font-size: 90%;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 1rem;
+  grid-auto-flow: row dense;
+  float: left;
+  justify-content: space-between;
+  width: 63%;
+}
+
+.recommendations > article:nth-child(odd){
+  background: #ead6f0;
+}
+
+.rec1,.rec2,.rec3, .bdest1, .bdest2, .bdest3, .bdest4, .bdest5, .bdest6{
+  display: grid;
+  flex-flow: column;
+  border: 1px solid #f0ead6;
+  border-radius: 1rem;
+  padding: 20px;
+  margin: 20px;
+}
+
+.bdesta1, .bdesta2, .bdesta3, .ticketaside1, .ticketaside2, .ticketaside3, .contacta1, .contacta2, .contacta3, {
+text-align: center;
+justify-content: center;
+display: block;
+border-radius: 1rem;
+padding: 2em;
+float: right;
+margin: 0 1.5%;
+width: 30%;
+}
+
+.bestdestinations > article:nth-child(odd){
+  background: #ead6f0;
+}
+
+.imageresponsive, .imagekos, .imagecrete, .imagecuracao, .imageairplane{
+  order: -1;
+  align-self: center;
+  max-width: 300px;
+  height: auto;
+  margin-top: auto;
+  justify-content: center;
+}
+
 .cookies{
   position: fixed;
   bottom: 8px;
@@ -108,41 +277,384 @@ footer{
   color: #FA0;
   opacity: 50%;
   width: 33%;
-  height: 100px;
-
-}
-form{
-
-}
-em{
-
-}
-ol{
-
-}
-ul{
-
-}
-table{
-          padding: 10px;
-          border: 3px solid #1c87c9;
-          border-radius: 5px;
-          background-color: #e5e5e5;
-          text-align: left;
-}
-th {
-        padding: 10px;
-        border: 2px solid #1c87c9;
-        border-radius: 5px;
-        background-color: #e5e5e5;
-        text-align: center;
-        color: #1c87c9;
-      }
-      td{
-        text-align: center;
-        color: #190933;
-        font-family: Helvetica, sans-serif;
-      }
-tfoot{
+  height: 30px;
+  z-index: 9999;
   text-align: center;
 }
+
+.fiveroutes{
+  display: flex;
+  flex-flow: column;
+  border: 1px solid #f0ead6;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  color: #ead6f0;
+  font-family: "Georgia", serif;
+  font-size: 1rem;
+  text-indent: inherit;
+  float: left;
+}
+
+.formyform{
+  float: left;
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+  border: 1px solid #f0ead6;
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+.contactus{
+  float: left;
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+  border: 1px solid #f0ead6;
+  border-radius: 1rem;
+  padding: 2rem;
+  color: #0D5C63;
+  letter-spacing: 0.05em;
+  font-family: "Georgia", serif;
+  font-size: 1rem;
+}
+
+#navburger{
+  width: 100%;
+  color: #ead6f0;
+  opacity: 55%;
+  padding: 0;
+}
+
+#navburger a:hover{
+  transition: .5s;
+  color: #FFC72B;
+}
+
+#hamburgeritems{
+  display: flex;
+}
+/*
+#navburger ul{
+    list-style-type: none;
+    margin: 0;
+    margin-left: auto;
+    padding: 1.5%;
+    width: 100%;
+    overflow: hidden;
+}
+#navburger li{
+    margin: 0;
+    padding: 16px;
+    width: 100%;
+    overflow: hidden;
+    float: left;
+    }
+#hamburgeritems a{
+  display: block;
+  flex-grow: 1;
+  flex-basis: 0;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Notable", sans-serif;
+  padding: 16px;
+}
+*/
+
+/* Creating the behaviour of the elements for PC resolution */
+@media screen and (min-width: 1280px) and (min-resolution: 1dppx) {
+  #navbar label, #hamburger, #hamburgerlabel {
+    display: none;
+  }
+
+  .imagekos, .imagecrete, .imagecuracao{
+    order: -1;
+    align-self: center;
+    max-width: 300px;
+    float: right;
+    height: auto;
+    margin-top: auto;
+    justify-content: center;
+  }
+  .rec1, .rec2, .rec3{
+    float: left;
+    margin: 0 1.5%;
+  }
+  .fiveroutes{
+    float: right;
+    margin: 0 1.5%;
+    width: 97%;
+  }
+  .bdesta1, .bdesta2, .bdesta3, .bdest1, .bdest2, .bdest3, .bdest4, .bdest5, .bdest6{
+    margin: 0 1.5%;
+    display: inline-block;
+  }
+  .bdest2{
+    order: 1;
+    float: left;
+  }
+  .bdest1{
+    order: 2;
+  }
+  .bdest3{
+    order: 3;
+    float: right;
+  }
+  .bdest4{
+    order: 5;
+    float: right;
+  }
+  .bdest5{
+    order:4;
+    float: left;
+  }
+  .bdest6{
+    order:6;
+  }
+  .bdesta1{
+    float: left;
+    order: 7;
+  }
+  .bdesta2{
+    order: 8;
+  }
+  .bdesta3{
+    float: right;
+    order: 9;
+  }
+  #ticketinfo{
+    float: left;
+    width: 100%;
+    order: 1;
+  }
+  .tabletickets{
+    float:left;
+    width: 66%;
+    order: 2;
+  }
+  .ticketaside1{
+    float: right;
+    width: 33%;
+    order: 3;
+  }
+  .ticketaside2{
+    float: right;
+    width: 33%;
+    order: 4;
+  }
+  .ticketaside3{
+    float: right;
+    width: 33%;
+    order: 5;
+  }
+  .tablefooter{
+    float:left;
+    width: 66%;
+    order: 6;
+  }
+}
+
+/* Creating the behaviour of the elements for mobile phone resolution */
+@media screen and (max-width: 480px) and (max-resolution: 3dppx) {
+  #hamburgeritems a{
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border-top: 1px solid #fff;
+  }
+  #navburger label{
+    display: inline-block;
+    color: #fff;
+    background: #a02620;
+    font-size: 1.2em;
+    padding: 10px;
+  }
+  #hamburgeritems, #ticketinfo, #bdest4, #bdest6, #vid{
+    display:none;
+  }
+  #navburger input:checked ~ #hamburgeritems{
+    display:block;
+  }
+  #navburger{
+    float:right;
+    position: fixed;
+  }
+  .imagekos, .imagecrete, .imagecuracao{
+    order: -1;
+    align-self: center;
+    max-width: 300px;
+    float: left;
+    height: auto;
+    margin-top: auto;
+    justify-content: center;
+  }
+  .fiveroutes, .rec1, .rec2, .rec3, .bdest5, .bdest3, .bdest2, .bdest1, .bdesta1, .bdesta2, .bdesta3, .ticketaside1, .ticketaside2, .ticketaside3, .tabletickets, .tablefooter, .contactus{
+    float: left;
+    margin: 0 1.5%;
+    width: 100%;
+  }
+  .fiveroutes{
+    order: 1;
+  }
+  .rec3{
+    order: 2;
+  }
+  .rec2{
+    order: 3;
+  }
+  .rec1{
+    order: 4;
+  }
+  .bdest5{
+    order: 1;
+  }
+  .bdest3{
+    order: 2;
+  }
+  .bdest2{
+    order: 3;
+  }
+  .bdest1{
+    order: 4;
+  }
+  .bdesta1{
+    order: 5;
+  }
+  .bdesta2{
+    order: 6;
+  }
+  .bdesta3{
+    order: 7;
+  }
+  .tabletickets{
+    order: 1;
+  }
+  .tablefooter{
+    order: 2;
+  }
+  .ticketaside1{
+    order: 3;
+  }
+  .ticketaside2{
+    order: 4;
+  }
+  .ticketaside3{
+    order: 5;
+  }
+  .contactus{
+    order: 1;
+  }
+  .formyform{
+    order: 2;
+    float: left;
+  }
+  .contacta1{
+    order: 3;
+    float: right;
+  }
+  .contacta2{
+    order: 4;
+    float: right;
+  }
+  .contacta3{
+    order: 5;
+    float: right;
+  }
+}
+
+/* Creating the behaviour of the elements for Tablet resolution */
+  @media screen and (min-width: 481px) and (max-width: 1279px) and (max-resolution: 2dppx) {
+    #hamburgeritems a{
+      box-sizing: border-box;
+      display: block;
+      width: 100%;
+      border-top: 1px solid #fff;
+    }
+    #navburger label{
+      display: inline-block;
+      color: #fff;
+      background: #a02620;
+      font-size: 1.2em;
+      padding: 10px;
+    }
+    #hamburgeritems, #bdest4, #bdesta3, #ticketaside1{
+      display:none;
+    }
+    #navburger input:checked ~ #hamburgeritems{
+      display:block;
+    }
+    .imagekos, .imagecrete, .imagecuracao{
+      order: -1;
+      align-self: center;
+      max-width: 300px;
+      float: left;
+      height: auto;
+      margin-top: auto;
+      justify-content: center;
+    }
+    .fiveroutes, #vid, .rec1, .rec2, .rec3, #ticketinfo, .tabletickets, .tablefooter, .contactus, .formyform, .contacta1, .contacta2, .contacta3{
+      float: left;
+      margin: 0 1.5%;
+      width: 100%;
+    }
+    .bdest1, .bdest2, .bdest3, .bdest5, .bdest6, .bdesta1, .bdesta2, .ticketaside2, .ticketaside3{
+      float: inherit;
+      width: 50%;
+    }
+    .fiveroutes{
+      order: 1;
+    }
+    #vid{
+      order: 2;
+    }
+    .rec3{
+      order: 3;
+    }
+    .rec2{
+      order: 4;
+    }
+    .rec1{
+      order: 5;
+    }
+    .bdest1{
+      order: 1;
+    }
+    .bdest2{
+      order: 2;
+    }
+    .bdest3{
+      order: 3;
+    }
+    .bdest5{
+      order: 4;
+    }
+    .bdest6{
+      order: 5;
+    }
+    .bdesta1{
+      order: 6;
+    }
+    .bdesta2{
+      order: 7;
+    }
+    #ticketinfo{
+      order: 1;
+    }
+    .tabletickets{
+      order: 2;
+    }
+    .tablefooter{
+      order: 3;
+    }
+    .ticketaside2{
+      order: 4;
+      float: left;
+    }
+    .ticketaside3{
+      order: 5;
+      float: right;
+    }
+  }
