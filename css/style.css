@@ -5,6 +5,7 @@
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
+  grid-template-areas: inherit;
 }
 
 @font-face {
@@ -31,7 +32,9 @@ aside {
   float: left;
   justify-content: space-between;
   flex-flow: column;
+  position: static;
 }
+
 
 h1{
   font-family: "Notable", sans-serif;
@@ -62,7 +65,8 @@ h3{
 }
 
 p{
-  text-indent: inherit;
+  word-indent: 0.01%;
+  text-indent: 0.01%;
   color: #0D5C63;
   letter-spacing: 0.05em;
   word-spacing: inherit;
@@ -134,7 +138,15 @@ th:hover{
   background-color: #1c87c9;
   color: #e5e5e5;
 }
-
+a::selection{
+  color: #00FF00;
+}
+p::first-letter{
+  /* Pantone 123C CMYK Value below */
+  color: #ffc72c;
+  text-decoration: none;
+  text-transform: uppercase;
+}
 td{
         text-align: center;
         color: #190933;
@@ -218,6 +230,7 @@ li a:hover {
 video {
            max-width: 100%;
            height: auto;
+           position: relative;
       }
 
 /* Setting style for custom containers*/
@@ -231,8 +244,8 @@ video {
   justify-content: space-between;
   width: 63%;
 }
-
-.recommendations > article:nth-child(odd){
+  /* selecting elements by a + (plus) below */
+.recommendations + article:nth-child(odd){
   background: #ead6f0;
 }
 
@@ -256,6 +269,7 @@ margin: 0 1.5%;
 width: 30%;
 }
 
+/* selecting elements by a > (bigger sign) below */
 .bestdestinations > article:nth-child(odd){
   background: #ead6f0;
 }
@@ -302,7 +316,10 @@ width: 30%;
   display: flex;
   flex-flow: column;
   border: 1px solid #f0ead6;
+  border-color: #f0ead6;
+  border-style: double;
   border-radius: 1rem;
+  border-width: thin;
   padding: 2rem;
 }
 
@@ -335,34 +352,6 @@ width: 30%;
 #hamburgeritems{
   display: flex;
 }
-/*
-#navburger ul{
-    list-style-type: none;
-    margin: 0;
-    margin-left: auto;
-    padding: 1.5%;
-    width: 100%;
-    overflow: hidden;
-}
-#navburger li{
-    margin: 0;
-    padding: 16px;
-    width: 100%;
-    overflow: hidden;
-    float: left;
-    }
-#hamburgeritems a{
-  display: block;
-  flex-grow: 1;
-  flex-basis: 0;
-  text-align: center;
-  font-weight: bold;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-family: "Notable", sans-serif;
-  padding: 16px;
-}
-*/
 
 /* Creating the behaviour of the elements for PC resolution */
 @media screen and (min-width: 1280px) and (min-resolution: 1dppx) {
@@ -434,6 +423,7 @@ width: 30%;
     float:left;
     width: 66%;
     order: 2;
+    flex-shrink: 1;
   }
   .ticketaside1{
     float: right;
