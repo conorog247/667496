@@ -9,7 +9,7 @@
 }
 
 @font-face {
-  font-family: "Notable", sans-serif;
+  font-family: "Notable";
   src: url('/fonts/Notable/Notable-Regular.ttf');
 }
 
@@ -28,7 +28,6 @@ aside {
   display: block;
   grid-template-columns: auto auto;
   grid-gap: 1rem;
-  grid-auto-flow: minmax(300px, auto);
   float: left;
   justify-content: space-between;
   flex-flow: column;
@@ -65,7 +64,6 @@ h3{
 }
 
 p{
-  word-indent: 0.01%;
   text-indent: 0.01%;
   color: #0D5C63;
   letter-spacing: 0.05em;
@@ -88,7 +86,7 @@ label{
   display: inline-block;
   text-align: left;
   width: 20rem;
-  vertical-align: left;
+  vertical-align: inherit;
 }
 
 input{
@@ -258,7 +256,8 @@ video {
   margin: 20px;
 }
 
-.bdesta1, .bdesta2, .bdesta3, .ticketaside1, .ticketaside2, .ticketaside3, .contacta1, .contacta2, .contacta3, {
+.bdesta1, .bdesta2, .bdesta3, .ticketaside1, .ticketaside2, .ticketaside3, .contacta1, .contacta2, .contacta3
+{
 text-align: center;
 justify-content: center;
 display: block;
